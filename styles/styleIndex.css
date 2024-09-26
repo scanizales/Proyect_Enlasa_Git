@@ -59,7 +59,7 @@ header .login a:hover {
 /* Estilos de Sección Héroe */
 .hero {
     position: relative;
-    background: url('fondo principal.jpg') no-repeat center center/cover;
+    background: url('../assets/fondoPrincipal.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: flex-start; /* Alinear contenido a la izquierda */
