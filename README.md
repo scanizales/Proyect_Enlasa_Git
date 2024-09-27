@@ -1,6 +1,6 @@
 #Proyecto: Sistema de Seguros Enlasa - Versión 1.0
 
-#Desarrollladores: Gissell Tatiana Matta, María Elvira Cujar, Sofía Canizales Lezama, Santiago Sáenz Córtes y Santiago Bénites
+#Desarrollladores: Gissell Tatiana Matta, María Elvira Cujar, Sofía Canizales Lezama, Santiago Sáenz Córtes y Santiago Bénitez
 
 #Objetivo: Desarrollar una aplicación web que sea capaz de administrar información de clientes de seguros, administradores y gerentes.
 
