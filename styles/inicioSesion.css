@@ -1,3 +1,6 @@
+:root{
+  --color-primario: rgb(31, 31, 162);
+}
 body {
   background-image: url(../assets/fondInicio.jpg);
   background-size: cover;
@@ -50,7 +53,7 @@ body header article {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(31, 31, 162);
+  background-color: var(--color-primario);
   color: white;
   border-radius: 20px;
   font-size: 80%;
@@ -75,7 +78,7 @@ body form {
   margin-left: 5%;
 }
 body form h1 {
-  color: rgb(31, 31, 162);
+  color: var(--color-primario);
 }
 body form section {
   align-items: center;
@@ -93,7 +96,7 @@ body form button {
   border-radius: 20px;
   height: 50px;
   color: white;
-  background-color: rgb(31, 31, 162);
+  background-color: var(--color-primario);
   font-size: 120%;
   margin-top: 5px;
 }
