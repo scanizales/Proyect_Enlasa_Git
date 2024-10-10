@@ -1,0 +1,137 @@
+:root{
+    --color-primario: rgb(31, 31, 162);
+}
+
+body{
+    font-family: "Mukta", sans-serif;
+}
+header{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    font-size: calc(13px + 1.2vw);
+    color: var(--color-primario);
+}
+
+header nav article{
+    display: flex;
+    background-color: var(--color-primario);
+    align-items: center;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;   
+}
+
+header nav article img{
+    width: 40px;
+    width: calc(24px + 1.2vw)
+}
+
+header nav article span{
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: calc(10px + 0.3vw);
+    padding-right: 6px;   
+}
+
+form{
+    display: flex;
+    justify-content: space-between;   
+    background-color: #e5ebee;
+    border-radius: 10px;
+    border:solid 1px var(--color-primario);
+    margin-left: 4%;
+    margin-right: 4%;
+    padding:2% 5%;
+    font-size: 16px;   
+}
+
+.info-cliente, .info-seguro{
+    display: flex;
+    flex-direction: column;   
+    margin-bottom: 1.5em;
+    gap:2em;
+    width: 45%;
+}
+
+/*Estilos para sections con un label y un imput */
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*Estilos para el apartado de télefonos */
+.phone{
+   display: flex;
+   flex-direction: column;
+   gap:0.5em;
+}
+
+.phone input{
+    width: 48%;
+}
+/* """""""""""" */
+
+.contentButton{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin:0;
+}
+
+button{
+    background-color: var(--color-primario);
+    padding: 0.5em 2em;
+    margin-top: 0.5em;
+    border-radius: 10px;
+    font-size:1.3em;
+    color: white;
+}
+
+input, select{
+    height: 2em;
+    border-radius: 3px;
+    border: solid 1px gray;   
+}
+select{
+    background-color: white;
+    font-size: 16px;
+}
+
+/*Estilos para los inputs de tipo date*/
+.date{
+    font-size:medium;
+}
+
+/*Estilos responsive */
+@media (max-width: 1100px){
+    form{
+        display: flex;
+        flex-direction: column;  
+        font-size: 14px;    
+    }
+    .info-cliente, .info-seguro{
+        width: 100%;
+    }   
+}
+@media (max-width: 480px){
+    .phone input{
+        width: 47%;
+    }
+    select{
+        font-size: 13px;
+    }
+    input, select option{
+        height: 1.6em;  
+    }
+}

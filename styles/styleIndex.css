@@ -10,18 +10,18 @@ body {
     overflow-x: hidden;
 }
 
-/* Encabezado fijo en la parte superior */
+
 header {
-    position: fixed; /* Cambiar a fixed para que flote siempre en la parte superior */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px; /* Ajustar el padding para mejor visualización */
-    background-color: transparent; /* Fondo transparente */
-    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    padding: 10px 50px; 
+    background-color: transparent; 
+    z-index: 1000; 
 }
 
 header .logo img {
@@ -31,20 +31,20 @@ header .logo img {
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 80px; /* Aumentar el espacio entre los elementos */
+    gap: 80px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 24px; /* Aumentar tamaño de fuente */
+    font-size: 24px; 
     font-weight: bold;
 }
 
 header .login a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 24px; /* Aumentar tamaño de fuente */
+    font-size: 24px;
     font-weight: bold;
     background-color: transparent;
     padding: 10px 20px;
@@ -62,16 +62,16 @@ header .login a:hover {
     background: url('../assets/fondoPrincipal.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
-    justify-content: flex-start; /* Alinear contenido a la izquierda */
+    justify-content: flex-start; 
     align-items: center;
     color: white;
-    padding-left: 10%; /* Espacio a la izquierda para el texto */
-    z-index: 1; /* Asegúrate de que esté por debajo del encabezado */
+    padding-left: 10%; 
+    z-index: 1; 
 }
 
 .hero-content {
-    text-align: left; /* Alinear texto a la izquierda */
-    background: transparent; /* Fondo transparente para el texto */
+    text-align: left; 
+    background: transparent; 
     padding: 20px 40px;
     border-radius: 10px;
 }
@@ -88,19 +88,19 @@ header .login a:hover {
     line-height: 1.4;
 }
 
-/* MEDIA QUERIES */
+/* Estilo responsive*/
 @media (max-width: 10100px) {
     header {
         padding: 20px 40px;
     }
     
     header nav ul {
-        gap: 50px; /* Ajustar espacio para pantallas más pequeñas */
+        gap: 50px; 
     }
     
     header .login a {
         padding: 8px 16px;
-        font-size: 20px; /* Ajustar tamaño de fuente */
+        font-size: 20px;
     }
     
     .hero-content h1 {
@@ -139,12 +139,12 @@ header .login a:hover {
     }
     
     header nav ul li a {
-        font-size: 18px; /* Ajustar tamaño de fuente */
+        font-size: 18px; 
     }
 
     header .login a {
         padding: 6px 12px;
-        font-size: 16px; /* Ajustar tamaño de fuente */
+        font-size: 16px;  
     }
 
     .hero {
