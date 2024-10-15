@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/admin/principalAdmin.css">
+    <title>Principal_Admin</title>
+</head>
+<body>
+    <header>
+        <section>
+            <button id="boton-nav">     
+                <img src="../../assets/menu.png" alt="logo">        
+            </button>
+            <figure>
+                <img src="../../assets/iconoLogo.png" alt="logo">
+            </figure>
+            <h1>Enlasa</h1>
+        </section>
+        <figure class="icono1">      
+            <img src="../../assets/icono1.png">           
+            <span><strong>Camilo Andres</strong></span>
+        </figure>       
+    </header>
+
+    <div class="lyout">
+        <nav id="nav" class="cerrado">
+            <section class="rol">
+                <h3>Bienvenido(a)</h3>
+                <p>Administrador</p>
+            </section>
+            <section class="confi">
+                <p>Configuración</p>
+                <button class="icono2">               
+                    <figure>
+                        <img src="../../assets/profile.png"" alt="icono">
+                    </figure>   
+                    <p>Mi perfil</p>
+                </button>
+                <button class="icono2">                
+                    <figure>
+                        <img src="../../assets/out.png" alt="icono">
+                    </figure>               
+                    <p>Cerrar sesión</p>
+                </button>        
+            </section>
+            <section class="modulos">
+                <p>Modulos</p>
+                <button>Agregar cliente</button>
+                <button>Agregar siniestro</button>
+                <button>Agregar aseguradora</button>
+                <button>Agregar tipo de seguro</button>
+                <button>Agregar seguro</button>
+                <button>Ver clientes</button>
+                <button>Ver siniestros</button>
+                <button>Ver Aseguradoras</button>
+                <button>Ver tipos de seguros</button>
+                <button>Ver seguros</button>
+            </section>
+        </nav>
+        <script>
+            const botonNav = document.getElementById('boton-nav');
+            const nav = document.getElementById('nav');
+            botonNav.addEventListener('click',()=>{
+                nav.classList.toggle('abierto');
+                nav.classList.toggle('cerrado');
+            })
+        </script>
+        <main>
+            <section class="bienvenida">
+              <p>Buen día <span>Sofía.</span></p>
+              <p>Bienvenido(a) a la administración de Enlasa.</p>  
+            </section>
+        </main>
+    </div>   
+</body>
+</html>
