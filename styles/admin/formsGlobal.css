@@ -1,0 +1,75 @@
+:root{
+    --color-primario: #0048B0;
+    --color-hover-button: #005eef;
+}
+section h3{
+    font-size: calc(10px + 1vw);
+    color: var(--color-primario);
+    margin-left: 5%;
+}
+
+form{
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+    background-color: #e5ebee;
+    border-radius: 10px;
+    border:solid 1px var(--color-primario);
+    margin: 0;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding:2% 3%;
+    font-size: 16px; 
+    width: 40%;  
+    gap: 1em;
+    font-size: calc(12px + 0.3vw);
+}
+form section{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+}
+input{
+    width: 100%;
+    height:calc(15px + 1vw);
+    border-radius: 3px;
+    border: solid 1px gray;
+}
+.contentButton{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    font-size: calc(10px + 0.3vw);
+}
+
+#botton-form{
+    background-color: var(--color-primario);
+    padding: 0.3em 2em;
+    margin-top: 0.5em;
+    border-radius: 10px;
+    font-size:1.3em;
+    color: white;
+    width:fit-content ;
+}
+#botton-form:hover{
+    background-color: var(--color-hover-button);
+    cursor: pointer;
+}
+#seguro-form input, select{
+    height: 2em;
+    border-radius: 3px;
+    border: solid 1px gray;   
+    background-color: white;
+}
+.size, option{
+    font-size:calc(12px + 0.3vw);
+}
+.size{
+    width: fit-content;
+}
+@media (max-width: 700px){
+    form{
+        width: 80%;
+    } 
+}

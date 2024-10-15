@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/admin/formsGlobal.css">
+    <title>Registrar seguro</title>
+</head>
+<body>
+    <section>
+        <h3>Registrar Seguro</h3>
+    </section>
+    <form action="" id="seguro-form">
+        <section>
+            <label for="type">Nombre del seguro:</label>
+            <input name="type" type="text">
+        </section>
+        <section>
+            <label for="typeInsurance">Tipo de seguro al que pertenecerá:</label>
+            <select name="typeInsurance" required>
+                <option value="Generales">Generales</option>
+                <option value="Hogar y copropiedad">Hogar y copropiedad</option>
+                <option value="Obligatorios">Obligatorios</option>
+                <option value="Vida">De vida</option>
+                <option value="Responsabilidad civil contractual y extracontractual">Responsabilidad civil contractual y extracontractual</option>
+            </select>
+        </section>
+        <section class="contentButton">
+            <button id="botton-form"><strong>Registrar</strong></button>
+        </section>
+    </form>
+</body>
+</html>

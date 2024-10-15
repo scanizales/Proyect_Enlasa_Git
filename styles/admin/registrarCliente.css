@@ -1,46 +1,11 @@
 :root{
-    --color-primario: rgb(31, 31, 162);
+    --color-primario: #0048B0;
+    --color-hover-button: #005eef;
 }
-
-body{
-    font-family: "Mukta", sans-serif;
-}
-header{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-nav{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h1{
-    font-size: calc(13px + 1.2vw);
+section h3{
+    font-size: calc(10px + 1vw);
     color: var(--color-primario);
-}
-
-header nav article{
-    display: flex;
-    background-color: var(--color-primario);
-    align-items: center;
-    width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;   
-}
-
-header nav article img{
-    width: 40px;
-    width: calc(24px + 1.2vw)
-}
-
-header nav article span{
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-    font-size: calc(10px + 0.3vw);
-    padding-right: 6px;   
+    margin-left: 5%;
 }
 
 form{
@@ -89,13 +54,17 @@ form{
     margin:0;
 }
 
-button{
+#botton-form{
     background-color: var(--color-primario);
     padding: 0.5em 2em;
     margin-top: 0.5em;
     border-radius: 10px;
     font-size:1.3em;
     color: white;
+}
+#botton-form:hover{
+    background-color: var(--color-hover-button);
+    cursor: pointer;
 }
 
 input, select{
