@@ -59,7 +59,7 @@ form{
     padding: 0.5em 2em;
     margin-top: 0.5em;
     border-radius: 10px;
-    font-size:1.3em;
+    font-size:calc(10px + 0.4vw);
     color: white;
 }
 #botton-form:hover{
