@@ -4,6 +4,7 @@
     --color-text1:white;
     --background1: #e5ebee;
     --background2: #004ee1;
+    --font-size-cuerpo :calc(10px + 0.3vw);
 }
 /*estilos globales de figure*/
 figure{
@@ -14,12 +15,15 @@ figure img{
     width:100%;
 }
 /*.........................*/
-body, body{
+body{
     margin: 0;
     height: 100vh;
-    font-family: "Mukta", sans-serif;
-
+    font-family: "Baloo Paaji 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -33,7 +37,7 @@ header{
 header section{
     display: flex;
     align-items: center;
-    font-size: calc(10px + 0.3vw); 
+    font-size: calc(10px + 0.6vw); 
 }
 #boton-nav{
     display: none;
@@ -62,7 +66,7 @@ header figure span{
     color: white;
     text-align: center;
     border-radius: 10px;
-    font-size: calc(10px + 0.3vw);
+    font-size:var(--font-size-cuerpo);
     padding-right: 6px;   
 }
 .lyout{
@@ -86,7 +90,7 @@ nav .rol, nav .confi{
     display: flex;
     flex-direction: column;
     align-content: center;
-    font-size: calc(10px + 0.3vw);
+    font-size: calc(12px + 0.4vw);
     gap: 0.3em;
     background-color: var(--background1); 
 }
@@ -107,8 +111,6 @@ nav .rol{
 .icono2{
     display: flex;
     border:none;
-    align-content: center;
-    align-items: center;
     gap:0.2rem;  
     width: 100%; 
     padding: 0 calc(6px + 0.5vw);
@@ -121,17 +123,19 @@ nav .rol{
     margin: 0;
 }
 .confi button  p, .modulos p{
-    font-size: calc(10px + 0.3vw);
+    font-size:var(--font-size-cuerpo);
     margin-top: 0;
+    font-family: "Baloo Paaji 2", sans-serif;
+   
 }
-
 /*Tercer section del nav*/
 .modulos{
     display: flex;
     flex-direction: column;
+    font-family: "Baloo Paaji 2", sans-serif;
 }
 .modulos p, .p{
-    font-size: calc(10px + 0.3vw);
+    font-size:calc(12px + 0.4vw) ;
     margin:0;
     margin-bottom: 0.8em;
     padding-left: 9%;
@@ -141,12 +145,14 @@ nav .rol{
     border-radius: 0;
     text-align: left;
     align-content: center;
+    align-items: center;
     background-color: white;
     border: none;
     padding-left: 9%;
     padding-top: 6%;
     padding-bottom: 6%;
     font-size: calc(10px + 0.3vw);
+    font-family: "Baloo Paaji 2", sans-serif;
 }
 .modulos button:focus, .icono2:focus{
     background-color: var(--background1);
@@ -169,13 +175,14 @@ main .bienvenida{
     width: 80%;
     height: fit-content;
     border: solid 1px gray;
-    font-size:calc(14px + 0.5vw);
+    font-size:calc(12px + 0.6vw);
 }
 /*Nav*/
 #nav{
     transition:all 0.5s ease-in-out;
 }
 
+/*estilos para desplegar el menu´*/
 @media (max-width: 700px){
     #boton-nav{
         display:flex;
@@ -193,8 +200,5 @@ main .bienvenida{
     } 
     #nav.abierto{
         display: flex;
-    }
-    main{
-        height: 100vh;
-    }
+    }  
 }

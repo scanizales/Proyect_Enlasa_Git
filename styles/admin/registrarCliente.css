@@ -104,3 +104,11 @@ select{
         height: 1.6em;  
     }
 }
+
+/*estilos diferentes para el form de editar cliente*/
+#form-edit-cliente{
+    max-width:calc(400px + 6vw);
+}
+#form-edit-cliente .info-cliente{
+    width: 100%;
+}

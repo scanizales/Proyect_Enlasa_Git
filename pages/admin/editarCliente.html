@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/admin/registrarCliente.css">
+    <title>Editar_Cliente</title>
+</head>
+<body>
+    <form id="form-edit-cliente">
+        <section class="info-cliente">
+            <section class="column">
+                <label for="name">Nombre:</label>
+                <input value="Sofía"  name="name" type="text" placeholder="Ej: Pepito Pérez" required></input>
+            </section>
+            <section>
+                <label for="typeDocument">Tipo de documento:</label>
+                <select name="typeDocument" required>
+                    <option value="NIT">NIT</option>
+                    <option value="CC">CC</option>
+                    <option value="CE">CE</option>
+                </select>
+            </section>
+            <section class="column">
+                <label for="document">Número de documento:</label>
+                <input value=1106773193 name="document" type="number" placeholder="Escriba aquí" required></input> 
+            </section>
+            <section class="phone">
+                <label for="phone">Télefonos:</label>
+                <section>
+                    <input value=3212418079 name="phone" type="number" placeholder="Célular" required></input>
+                    <input name="phone" type="number" placeholder="Télefono fijo"></input>
+                </section>
+            </section>
+            <section class="column">
+                <label for="email">Correo electrónico:</label>
+                <input value="clsofi64@gmail.com" name="email" type="email" placeholder="Ej: soy@gmail.com" required></input> 
+            </section>
+            <section class="column">
+                <label for="city">Ciudad:</label>
+                <input value="Ibagué" name="city" type="text" placeholder="Ej: Ibagué" required></input>
+            </section>
+            <section class="column">
+                <label for="address">Dirección de residencia:</label>
+                <input value="Comfenalco etc" name="address" type="text" placeholder="Escriba aquí" required></input>
+            </section>
+            <section class="contentButton">
+                <button id="botton-form"><strong>Guardar</strong></button>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
