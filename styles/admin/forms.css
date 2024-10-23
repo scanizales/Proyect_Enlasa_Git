@@ -16,8 +16,11 @@ form{
     border:solid 1px var(--color-primario);
     margin-left: 4%;
     margin-right: 4%;
-    padding:2% 5%;
-    font-size: 16px;   
+    padding:2em;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;   
 }
 
 .info-cliente, .info-seguro{
@@ -61,6 +64,9 @@ form{
     border-radius: 10px;
     font-size:calc(10px + 0.4vw);
     color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
 }
 #botton-form:hover{
     background-color: var(--color-hover-button);
@@ -68,18 +74,22 @@ form{
 }
 
 input, select{
-    height: 2em;
+    height: calc(10px + 4vh);
+    width: 100%;
     border-radius: 3px;
     border: solid 1px gray;   
 }
 select{
     background-color: white;
     font-size: 16px;
+    height: 2.5em;
 }
 
 /*Estilos para los inputs de tipo date*/
 .date{
     font-size:medium;
+    height:calc(8px + 4vh);;
+    
 }
 
 /*Estilos responsive */
@@ -93,6 +103,7 @@ select{
         width: 100%;
     }   
 }
+
 @media (max-width: 480px){
     .phone input{
         width: 47%;
@@ -111,4 +122,10 @@ select{
 }
 #form-edit-cliente .info-cliente{
     width: 100%;
+}
+#formGlobal{
+    display: flex;
+    flex-direction: column;
+    width: calc(300px + 8vw);
+    gap:1.5em;
 }

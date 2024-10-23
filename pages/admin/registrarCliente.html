@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar_Cliente</title>
-    <link rel="stylesheet" href="../../styles/admin/registrarCliente.css">
+    <link rel="stylesheet" href="../../styles/admin/forms.css">
 </head>
 <body>
     <section>      
@@ -16,10 +16,9 @@
                 <label for="name">Nombre:</label>
                 <input name="name" type="text" placeholder="Ej: Pepito Pérez" required></input>
             </section>
-            <section>
+            <section class="column">
                 <label for="typeDocument">Tipo de documento:</label>
                 <select name="typeDocument" required>
-                    <option value="CE">TI</option>
                     <option value="NIT">NIT</option>
                     <option value="CC">CC</option>
                     <option value="CE">CE</option>
@@ -50,7 +49,7 @@
             </section>
         </section>
         <section class="info-seguro">
-            <section>
+            <section class="column">
                 <label for="insurance">Nombre del seguro:</label>
                 <select name="insurance" required>
                     <option value="Agropecuarios">Agropecuarios</option>
@@ -61,7 +60,7 @@
                     <option value="Responsabilidad civil contractual y extracontractual">Responsabilidad civil contractual y extracontractual</option>
                 </select>
             </section>
-            <section>
+            <section class="column">
                 <label for="typeInsurance">Tipo de seguro:</label>
                 <select name="typeInsurance" required>
                     <option value="Generales">Generales</option>
@@ -71,15 +70,15 @@
                     <option value="Responsabilidad civil contractual y extracontractual">Responsabilidad civil contractual y extracontractual</option>
                 </select>
             </section>
-            <section>
+            <section class="column">
                 <label for="startDate">Fecha de inicio:</label>
                 <input class="date" name="startDate" type="date" required></input>
             </section>
-            <section >
+            <section class="column">
                 <label for="expiryDate">Fecha de vencimiento:</label>
                 <input class="date" name="expiryDate" type="date"  required></input>
             </section>
-            <section>
+            <section class="column">
                 <label for="typeFace">Tipo de prima:</label>
                 <select name="typeFace" required>
                     <option value="TRIMESTRAL">Trimestral</option>
@@ -91,14 +90,14 @@
                 <label for="valueFace">Valor prima:</label>
                 <input name="valueFace" type="number" placeholder="Escriba el precio aquí..." required></input>
             </section>
-            <section>
+            <section class="column">
                 <label for="payMethod">Medio de pago:</label>
                 <select name="payMethod" required>
                     <option value="EFECTIVO">Efectivo</option>
                     <option value="TARJETA">Tarjeta</option>
                 </select>
             </section>
-            <section>
+            <section class="column">
                 <label for="insurer">Aseguradora:</label>
                 <select name="insurer" required>
                     <option value="SBS Seguros Colombia S.A">SBS Seguros Colombia S.A</option>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/admin/principalAdmin.css">
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Principal_Admin</title>
 </head>
 <body>
@@ -45,19 +47,73 @@
                     <p>Salir</p>
                 </button>        
             </section>
-            <section class="modulos">
+            <ul class="list">
                 <p>Modulos</p>
-                <button>Agregar cliente</button>
-                <button>Agregar siniestro</button>
-                <button>Agregar aseguradora</button>
-                <button>Agregar tipo de seguro</button>
-                <button>Agregar seguro</button>
-                <button>Ver clientes</button>
-                <button>Ver siniestros</button>
-                <button>Ver Aseguradoras</button>
-                <button>Ver tipos de seguros</button>
-                <button>Ver pólizas</button>
-            </section>
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <img src="/assets/people.png"  class="list_img">
+                        <a href="#" class="nav_link">Clientes</a>
+                        <img src="/assets/arrow.png"  class="list_arrow">
+                    </div>
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Agregar cliente</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Agregar beneficiario</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Agregar siniestro</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ver clientes</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ver pólilzas</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ver siniestros</a>
+                        </li>
+                    </ul>        
+                </li>
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <img src="/assets/insuranceHome.png"  class="list_img">
+                        <a href="#" class="nav_link">Aseguradoras</a>
+                        <img src="/assets/arrow.png"  class="list_arrow">
+                    </div>
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Agregar aseguradora</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ver aseguradoras</a>
+                        </li>
+                    </ul>        
+                </li>
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <img src="/assets/insurance.png"  class="list_img">
+                        <a href="#" class="nav_link">Portafolio</a>
+                        <img src="/assets/arrow.png"  class="list_arrow">
+                    </div>
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Agregar tipo seguro</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Agregar seguro</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Tipos seguros</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Seguros</a>
+                        </li>
+                    </ul>        
+                </li>
+               </ul>
+               <script src="../../js/nav.js"></script>          
         </nav>
         <script>
             const botonNav = document.getElementById('boton-nav');
