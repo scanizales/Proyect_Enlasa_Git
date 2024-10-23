@@ -3,20 +3,20 @@
     --color-hover-button: #005eef;
 }
 section h3{
-    font-size: calc(10px + 1vw);
-    color: var(--color-primario);
     margin-left: 5%;
+    color: var(--color-primario);
+    font-size: calc(10px + 1vw);
 }
 
 form{
     display: flex;
     justify-content: space-between;   
-    background-color: #e5ebee;
-    border-radius: 10px;
-    border:solid 1px var(--color-primario);
     margin-left: 4%;
     margin-right: 4%;
     padding:2em;
+    border-radius: 10px;
+    border:solid 1px var(--color-primario);
+    background-color: #e5ebee;
     font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -25,10 +25,10 @@ form{
 
 .info-cliente, .info-seguro{
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+    width: 45%;  
     margin-bottom: 1.5em;
     gap:2em;
-    width: 45%;
 }
 
 /*Estilos para sections con un label y un imput */
@@ -58,12 +58,12 @@ form{
 }
 
 #botton-form{
-    background-color: var(--color-primario);
     padding: 0.5em 2em;
     margin-top: 0.5em;
     border-radius: 10px;
-    font-size:calc(10px + 0.4vw);
+    background-color: var(--color-primario);
     color: white;
+    font-size:calc(10px + 0.4vw);
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;  
@@ -80,9 +80,9 @@ input, select{
     border: solid 1px gray;   
 }
 select{
+    height: 2.5em;
     background-color: white;
     font-size: 16px;
-    height: 2.5em;
 }
 
 /*Estilos para los inputs de tipo date*/

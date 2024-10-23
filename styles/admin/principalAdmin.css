@@ -38,7 +38,6 @@ header{
     height:auto;
     padding-right: 0.5em;
     padding-left: 0.5em;
-
    
 }
 header section{
@@ -167,17 +166,16 @@ nav .rol{
     background-color: var(--background1);
 }
 .list{
-    font-size: calc(10px + 0.2vw);
-    padding: 0;
-    margin: 0;
-    width: 90%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    border: 0 16px 16px 0;
-    background-color: white;
+    width: 90%;
+    margin: 0;
     padding-left: 9%;
     padding-top: 16%;
+    border: 0 16px 16px 0;
+    background-color: white;
+    font-size: calc(10px + 0.2vw);
+    justify-content: center;
     gap: calc(6px + 0.3vh);
 }
 .list p{
@@ -185,60 +183,67 @@ nav .rol{
     font-size: calc(10px + 0.3vw);
 }
 .list_item{
-    list-style: none;
     width: 100%;
-    text-align: center;
-    overflow: hidden;
     margin-right: 1.5em;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
 }
 .list_item--click{
     cursor: pointer;
 }
 .list_button{
     display: flex;
+    width: 100%;
     align-items: center;
     gap:0.5em;
-    width: 100%;
 }
 
 .arrow .list_arrow{
     transform: rotate(90deg);
 }
 .list_arrow{   
+    width: calc(10px + 0.5vw);
     transition: transform .3s;
-    width: calc(10px + 0.5vw)
 }
 .list_show{
     width:83%;
+    height: 0;
     padding: 0;
+    margin-left: 1em;
     border-left: 2px solid gray;
     list-style: none;
     transition: height .4s;
-    height: 0;
-    margin-left: 1em;
 }
 .list_img{
     width: calc(8px + 1.2vw);
 }
 /*Segunda sección*/
-/*main{
-    background-color: var(--background1);
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    height: 100vh;
 
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left:1% ;
+    background-color:whitesmoke;
+    font-size: calc(9px + 0.3vw); 
+    overflow: hidden;
+    position: relative;
 }
-main .bienvenida{
-    background-image: linear-gradient(320deg, var(--color-primario) -20%, transparent);
-    border-radius: 10px;
-    padding: calc(20px + 0.2vw);
-    margin-top: 2em;
+.bienvenida{
     width: 80%;
     height: fit-content;
+    padding: calc(20px + 0.2vw);
+    margin-top: 2em;
     border: solid 1px gray;
+    border-radius: 10px;
+    background-image: linear-gradient(320deg, var(--color-primario) -20%, transparent);
     font-size:calc(14px + 0.5vw);
-}*/
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 50%;
+}
 /*Nav*/
 #nav{
     transition:all 0.5s ease-in-out;
@@ -247,10 +252,10 @@ main .bienvenida{
 @media (max-width: 700px){
     #boton-nav{
         display:flex;
-        margin: 0;
-        background-color: var(--color-primario);
-        border: none;
         width: fit-content;
+        margin: 0;
+        border: none;
+        background-color: var(--color-primario);
         cursor:pointer;
     }
     #boton-nav img{

@@ -8,16 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Listado_De_Polizas</title>
+    <title>Listado_De_Siniestros</title>
 </head>
 <body>  
     <section id="clientes">
-        <h3>Listado de pólizas</h3>
+        <h3>Listado de Siniestros</h3>
     </section>
     <div id="general">
         <div class="filtrar">
             <section>
-                <h4>Filtrar pólizas</h4>
+                <h4>Filtrar siniestros</h4>
             </section>
             <div class="filtrar-items">
                 <div>
@@ -44,12 +44,16 @@
                     </section>
                 </div>
                 <div>
-                    <section>
-                        <label for="startDate">Fecha de inicio:</label>
-                        <input class="date" name="startDate" type="date"></input>
+                    <section class="column">
+                        <label for="state">Estado:</label>
+                        <select class="size"  name="state" required>
+                            <option value="Reportado">Reportado</option>
+                            <option value="Rechazado">Rechazado</option>
+                            <option value="Anulado">Anulado</option>
+                        </select>
                     </section>
                     <section>
-                        <label for="expiryDate">Fecha de vencimiento:</label>
+                        <label for="expiryDate">Fecha:</label>
                         <input class="date" name="expiryDate" type="date"></input>
                     </section>
                 </div>    
@@ -67,31 +71,27 @@
             <thead class="polizas">
                 <tr>
                     <th>Cliente</th>
-                    <th>Número</th>
+                    <th>Número de póliza</th>
+                    <th>Número de siniestro</th>
                     <th>Aseguradora</th>
                     <th>Tipo de póliza</th>
                     <th class="space">Póliza</th>
-                    <th>Fecha de inicio</th>
-                    <th>Fecha de vencimiento</th>
-                    <th>Prima</th>
-                    <th>Valor prima</th>
-                    <th>Medio de pago</th>
+                    <th>Fecha</th>                  
+                    <th>Descripción</th>
                     <th>Estado</th>
                 </tr>
             </thead>
             <tbody class="polizas">
                 <tr id="datos">
                     <td>Sofía Canizales Lezama</td>
-                    <td class="space">29076</td>
+                    <td>2907676</td>
+                    <td >29076</td>
                     <td>Seguros Bolivar</td>
                     <td>Seguro de vida</td>
                     <td>Individual</td>
                     <td>20/06/24</td>
-                    <td>20/06/32</td>
-                    <td>Mensual</td>
-                    <td>1.200.000</td>
-                    <td>Tarjeta</td>
-                    <td>Activa</td>
+                    <td>Accidente automovil</td>
+                    <td>En proceso</td>
                     <td>
                         <div class="boton-menu">
                             <button class="boton" class="options"><strong>Opciones</strong><i class="flecha"></i></button>
@@ -101,12 +101,6 @@
                                         <img src="../../assets/user-edit.png" alt="icono">
                                     </figure>
                                     <p>Editar</p>
-                                </button>
-                                <button class="icono-options options">
-                                    <figure>
-                                        <img src="../../assets/people.png" alt="icono">
-                                    </figure>
-                                    <p>Beneficiarios</p>
                                 </button>
                                 <button class="icono-options options">
                                     <figure>
