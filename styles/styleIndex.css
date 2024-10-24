@@ -1,253 +1,208 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    overflow-x: hidden;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-header {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
+.navbar {
+    background: #030378;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px; 
-    background-color: transparent; 
-    z-index: 1000; 
 }
 
-header .logo img {
-    height: 80px;
+.navbar img {
+    height: 84px;
+    margin-left: 15px; 
+    margin-right: 15px; 
+    vertical-align: middle;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 80px;
-}
-
-header nav ul li a {
+.nav_items a {
+    margin: 15px;
     color: white;
-    text-decoration: none;
-    font-size: 24px; 
-    font-weight: bold;
-}
-
-header .login a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: transparent;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-}
-
-header .login a:hover {
-    background-color: #ffdd44;
-}
-
-/* Estilos de Sección Héroe */
-.hero {
     position: relative;
-    background: url('../assets/fondoPrincipal.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center;
-    color: white;
-    padding-left: 10%; 
-    z-index: 1; 
+    text-decoration: none;
 }
 
-.hero-content {
-    text-align: left; 
-    background: transparent; 
-    padding: 20px 40px;
-    border-radius: 10px;
+.nav_items a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(13, 11, 120);
+    transition: all 0.5s;
 }
 
-.hero-content h1 {
-    font-size: 5em;
-    margin-bottom: 10px;
+.nav_items a:hover::before {
+    width: 100% !important;
 }
 
-.hero-content p {
-    font-size: 1.5em;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.4;
-}
-
-/* Estilo responsive*/
-@media (max-width: 10100px) {
-    header {
-        padding: 20px 40px;
-    }
-    
-    header nav ul {
-        gap: 50px; 
-    }
-    
-    header .login a {
-        padding: 8px 16px;
-        font-size: 20px;
-    }
-    
-    .hero-content h1 {
-        font-size: 4em;
-    }
-    
-    .hero-content p {
-        font-size: 1.2em;
-    }
+.nav_toggle {
+    display: none; 
 }
 
 @media (max-width: 768px) {
-    header {
-        padding: 10px 20px;
+    .nav_items {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #02005ba9; 
+        display: flex;
         flex-direction: column;
+        width: 100%;
+        height: auto; 
+        opacity: 0; 
+        visibility: hidden; 
+        transition: opacity 0.3s ease; 
     }
-    
-    header nav ul {
-        gap: 15px;
-        flex-direction: column;
+
+    .nav_items.open {
+        opacity: 1;
+        visibility: visible; 
+    }
+
+    .nav_items a {
         text-align: center;
     }
+
+    .nav_toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin: 10px; 
+    }
     
+    .nav_toggle span {
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin: 3px 0; 
+        transition: all 0.3s ease; 
+    }
+}
+
+.hero {
+    background-image: url('../assets/fondoPrincipal.jpg'); 
+    background-size: cover; 
+    background-position: center 15%; 
+    height: 70vh; 
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+.hero-content {
+    width: 100%;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    margin: 0;
+    text-align: left;
+}
+
+.hero-content p {
+    font-size: 1.5rem; 
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Redes Sociales */
+.container-bar {
+    width: 50px; 
+    position: fixed;
+    left: 0;
+    top: 40%; 
+    z-index: 1000; 
+    padding: 5px; 
+    border-radius: 5px; 
+}
+
+.icon-social {
+    display: flex;
+    flex-direction: column; 
+    background-color: #030378; 
+    transition: all 0.4s;
+    transform: translateX(0%);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.icon-social a {
+    position: relative; 
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px; 
+    color: #ffed29; 
+}
+
+.title {
+    font-family: Roboto;
+    position: absolute;
+
+    background: #020248;
+    padding: 0px 8px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 15px;
+    top: 12px;
+    left: 60px; 
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.icon-social a:hover .title {
+    opacity: 1;
+    visibility: visible;
+    left: 60px; 
+}
+
+#btn-social {
+    display: none; 
+}
+
+.fa-play {
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+    transform: rotate(180deg);
+    color: #49b0e6; 
+}
+
+#btn-social:checked ~ .fa-play {
+    transform: rotate(0deg);
+}
+
+#btn-social:checked ~ .icon-social {
+    transform: translateX(-100%);
+    opacity: 0; 
+    visibility: hidden; 
+    box-shadow: none; 
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 3em;
-    }
-    
-    .hero-content p {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 480px) {
-    header .logo img {
-        height: 40px;
-    }
-    
-    header nav ul li a {
-        font-size: 18px; 
-    }
-
-    header .login a {
-        padding: 6px 12px;
-        font-size: 16px;  
-    }
-
-    .hero {
-        height: 80vh; /* Ajuste de altura en pantallas muy pequeñas */
-    }
-
-    .hero-content {
-        padding: 15px 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5em;
+        font-size: 3rem; 
     }
 
     .hero-content p {
-        font-size: 0.9em;
+        font-size: 1rem; 
     }
-
-}
-.container-bar{
-	width: 100%;
-	max-width: 50px;
-	position: fixed;
-	left: 0;
-	top: 25%;
-    z-index: 1000;
-}
-.container-bar a{
-	display: block;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 18px;
-	position: relative;
-	transition: all 500ms ease;
-	color: #00aeff;
-}
-.container-bar a:hover{
-	background: #1c1c1c;
-}
-.container-bar .fa-facebook{
-	background: #f7e600;
-	border-radius: 0px 5px 0px 0px;
-}
-.container-bar .fa-instagram{
-	background: #f7e600;
-}
-.container-bar .fa-whatsapp{
-	background: #f7e600;
-}
-.container-bar #title{
-	position: absolute;
-	background: #1c1c1c;
-	padding: 0px 8px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	border-radius: 3px;
-	font-size: 15px;
-	top:12px; left: 0px;
-	transition: all 500ms ease;
-	opacity: 0;
-	visibility: hidden;
-	z-index: -1;
-}
-.container-bar a:hover #title{
-	opacity: 1;
-	visibility: visible;
-	left: 64px;
-}
-.container-bar #title:after{
-	position: absolute;
-	content: '';
-	border-left: 7px solid transparent;
-	border-right: 6px solid #1c1c1c;
-	border-top: 7px solid transparent;
-	border-bottom: 7px solid transparent;
-	right: 100%;
-	top: 8px;
-}
-#btn-social{
-	display: none;
-}
-.fa-play{
-	cursor: pointer;
-	transition: all 0.4s;
-	font-size: 12px;
-	margin-bottom: 5px;
-	display: inline-block;
-	transform: rotate(180deg);
-	color: #49b0e6;
-}
-#btn-social:checked ~ .fa-play{
-	transform: rotate(0deg);
-}
-.icon-social{
-	transition: all 0.4s;
-	transform: translateX(0%);
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-}
-#btn-social:checked ~ .icon-social{
-	transform: translateX(-100%);
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.0);
 }
