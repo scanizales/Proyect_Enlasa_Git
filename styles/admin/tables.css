@@ -89,7 +89,7 @@ select, input{
     border-bottom: solid 1px gray;
 }
 #buscar input{
-    height: 2em;
+    height: 1.5em;
 }
 
 table{

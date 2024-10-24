@@ -42,11 +42,10 @@ form{
 .phone{
    display: flex;
    flex-direction: column;
-   gap:0.5em;
 }
-
-.phone input{
-    width: 48%;
+.phone section{
+    display: flex;
+    gap:5px;
 }
 /* """""""""""" */
 
@@ -58,15 +57,16 @@ form{
 }
 
 #botton-form{
-    padding: 0.5em 2em;
+    padding: 0.2em 2em;
     margin-top: 0.5em;
     border-radius: 10px;
     background-color: var(--color-primario);
     color: white;
-    font-size:calc(10px + 0.4vw);
+    font-size:calc(10px + 0.2vw);
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-style: normal;  
+    font-style: normal; 
+    height:calc(35px + 2vh);
 }
 #botton-form:hover{
     background-color: var(--color-hover-button);
@@ -77,7 +77,10 @@ input, select{
     height: calc(10px + 4vh);
     width: 100%;
     border-radius: 3px;
-    border: solid 1px gray;   
+    border: solid 1px gray;  
+    padding: 0;
+    text-indent: 2px;
+
 }
 select{
     height: 2.5em;
@@ -105,9 +108,6 @@ select{
 }
 
 @media (max-width: 480px){
-    .phone input{
-        width: 47%;
-    }
     select{
         font-size: 13px;
     }
@@ -129,3 +129,4 @@ select{
     width: calc(300px + 8vw);
     gap:1.5em;
 }
+

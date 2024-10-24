@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/admin/forms.css">
+    <title>Editar-seguro</title>
+</head>
+<body>
+    <form action="" id="formGlobal">
+        <section class="column">
+            <label for="type">Nombre del seguro:</label>
+            <input name="type" type="text">
+        </section>
+        <section class="column">
+            <label for="typeInsurance">Tipo de seguro al que pertenecerá:</label>
+            <select name="typeInsurance" required>
+                <option value="Generales">Generales</option>
+                <option value="Hogar y copropiedad">Hogar y copropiedad</option>
+                <option value="Obligatorios">Obligatorios</option>
+                <option value="Vida">De vida</option>
+                <option value="Responsabilidad civil contractual y extracontractual">Responsabilidad civil contractual y extracontractual</option>
+            </select>
+        </section>
+        <section class="contentButton">
+            <button id="botton-form"><strong>Cancelar</strong></button>
+                <button id="botton-form"><strong>Guardar cambios</strong></button> 
+        </section>
+    </form>
+</body>
+</html>

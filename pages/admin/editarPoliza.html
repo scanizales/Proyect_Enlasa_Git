@@ -3,59 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar_Cliente</title>
     <link rel="stylesheet" href="../../styles/admin/forms.css">
+    <title>Editar_Póliza</title>
 </head>
 <body>
-    <section>      
-        <h3>Registrar cliente</h3> 
-    </section> 
-    <form>
-        <section class="info-cliente">        
-            <section class="column">
-                <label for="name">Nombre:</label>
-                <input name="name" type="text" placeholder="Ej: Pepito Pérez" required></input>
-            </section>
-            <section class="column">
-                <label for="typeDocument">Tipo de documento:</label>
-                <select name="typeDocument" required>
-                    <option value="NIT">NIT</option>
-                    <option value="CC">CC</option>
-                    <option value="CE">CE</option>
-                </select>
-            </section>
-            <section class="column">
-                <label for="document">Número de documento:</label>
-                <input name="document" type="number" placeholder="Escriba aquí" required></input> 
-            </section>
-            <section class="phone">
-                <label for="phone">Télefonos:</label>
-                <section>
-                    <input name="phone" type="number" placeholder="Célular" required></input>
-                    <input name="phone" type="number" placeholder="Télefono fijo"></input>
-                </section>
-            </section>
-            <section class="column">
-                <label for="email">Correo electrónico:</label>
-                <input name="email" type="email" placeholder="Ej: soy@gmail.com" required></input> 
-            </section>
-            <section class="column">
-                <label for="city">Ciudad:</label>
-                <input name="city" type="text" placeholder="Ej: Ibagué" required></input>
-            </section>
-            <section class="column">
-                <label for="address">Dirección de residencia:</label>
-                <input name="address" type="text" placeholder="Escriba aquí" required></input>
-            </section>
-            <section class="column">
-                <label for="typeInsurance">Estado póliza:</label>
-                <select name="typeInsurance" required>
-                    <option value="Generales">Activa</option>
-                    <option value="Hogar y copropiedad">Inactiva</option>
-                </select>
-            </section>
-        </section>
-        <section class="info-seguro">
+    <form id="form-edit-cliente" class="form-edit">
+        <div class="info-seguro">
             <section class="column">
                 <label for="insurance">Nombre del seguro:</label>
                 <select name="insurance" required>
@@ -78,6 +31,13 @@
                 </select>
             </section>
             <section class="column">
+                <label for="typeInsurance">Estado póliza:</label>
+                <select name="typeInsurance" required>
+                    <option value="Generales">Activa</option>
+                    <option value="Hogar y copropiedad">Inactiva</option>
+                </select>
+            </section>
+            <section class="column">
                 <label for="startDate">Fecha de inicio:</label>
                 <input class="date" name="startDate" type="date" required></input>
             </section>
@@ -85,6 +45,8 @@
                 <label for="expiryDate">Fecha de vencimiento:</label>
                 <input class="date" name="expiryDate" type="date"  required></input>
             </section>
+        </div>
+        <div class="info-seguro">
             <section class="column">
                 <label for="typeFace">Tipo de prima:</label>
                 <select name="typeFace" required>
@@ -116,10 +78,10 @@
                 </select>
             </section>
             <section class="contentButton">
-                <button id="botton-form"><strong>Registrar</strong></button>
-            </section>
-        </section>
+                <button id="botton-form"><strong>Cancelar</strong></button>
+                <button id="botton-form"><strong>Guardar cambios</strong></button>  
+            </section>      
+        </div>
     </form>
-
 </body>
 </html>
