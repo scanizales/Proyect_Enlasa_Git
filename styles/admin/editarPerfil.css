@@ -1,0 +1,14 @@
+.perfil-informacion{
+    background-color: white;
+    width: fit-content;
+    padding:1.5em;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+#botton-form{
+    padding: 0.6em;
+    height: fit-content;
+}
+.contentButton{
+    justify-content: left;
+}

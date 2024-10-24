@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/admin/forms.css">
+    <title>Editar_Siniestro</title>
+</head>
+<body>
+    <form id="formGlobal">
+        <section class="column">
+            <label for="name">Nombre:</label>
+            <input name="name" type="text" placeholder="Ej: Pepito Pérez" required></input>
+        </section>
+        <section class="column">
+            <label for="typeDocument">Tipo de documento:</label>
+            <select name="typeDocument" required>
+                <option value="CC">CC</option>
+                <option value="CE">CE</option>
+            </select>
+        </section>
+        <section class="column">
+            <label for="document">Número de documento:</label>
+            <input name="document" type="number" placeholder="Escriba aquí" required></input> 
+        </section>
+        <section class="column">
+            <label for="email">Correo electrónico:</label>
+            <input name="email" type="email" placeholder="Ej: soy@gmail.com" required></input> 
+        </section>
+        <section class="contentButton">
+            <button id="botton-form"><strong>Cancelar</strong></button>
+            <button id="botton-form"><strong>Guardar</strong></button>
+        </section>
+    </form>
+    
+</body>
+</html>

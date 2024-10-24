@@ -38,7 +38,7 @@
                                         </figure>
                                         <p>Editar</p>
                                     </button>
-                                    <button class="icono-options options">
+                                    <button id="abrir-modal" class="icono-options options">
                                         <figure>
                                             <img src="../../assets/delete.png" alt="icono">
                                         </figure>
@@ -46,6 +46,12 @@
                                     </button>
                                 </ul>
                             </div>
+                            <div id="modal" class="modal">
+                                <p>¿Estas seguro de eliminarla?</p>
+                                <button class="boton options" id="cerrar-modal2"><strong>Cancelar</strong></button>
+                                <button class="boton options" id="cerrar-modal"><strong>Si, eliminar</strong></button>                              
+                            </div>
+                            <script src="../../js/showModal.js"></script>
                         </td>
                     </tr>
                 </tbody>
